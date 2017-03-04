@@ -185,7 +185,7 @@ def local_alignment(S, T, sigma, print_matrix = False, print_strings = True, pri
 					local_aligned_S += S[a-1]
 					local_aligned_T += "-"
 
-		#create the middle line
+		#create the middle line, This just tells you which characters are aligned.
 		middle_line = ""
 		for i in range(len(local_aligned_S)):
 			if(local_aligned_S[i] == local_aligned_T[i]):
